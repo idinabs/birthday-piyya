@@ -1,6 +1,7 @@
 const loveBtn = document.getElementById('loveBtn');
 const counterDisplay = document.getElementById('counter');
 const formSection = document.getElementById('formSection');
+const greetingSection = document.getElementById('greetingSection');
 const sendBtn = document.getElementById('sendBtn');
 const wishlist = document.getElementById('wishlist');
 const confetti = document.getElementById('confetti');
@@ -17,6 +18,7 @@ loveBtn.addEventListener('click', () => {
   counterDisplay.textContent = counter;
 
   if (counter === 5) {
+    greetingSection.classList.add('hidden');
     formSection.classList.remove('hidden');
     triggerConfetti();
   }
