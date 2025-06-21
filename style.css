@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffe0ec, #ffc3a0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.heart {
+  font-size: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.heart:hover {
+  transform: scale(1.2);
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #e63946;
+}
+
+.hidden {
+  display: none;
+}
+
+canvas#confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
