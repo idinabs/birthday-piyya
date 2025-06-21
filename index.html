@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selamat Ulang Tahun, Piyya!</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun, Piyya Sayang!</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🎂 Selamat Ulang Tahun, Piyya Sayang! 🎉</h1>
-    <p>Klik hati di bawah ini untuk membuka pesan rahasia 💌</p>
-    <div class="heart" id="heart">❤️</div>
-    <div class="message hidden" id="message">
-      <p>Semoga harimu selalu penuh kebahagiaan, tawa, dan cinta. ❤️<br>
-      Aku bersyukur punya kamu. Aku sayang kamu selamanya! 💕</p>
+    <h1>🎂 Selamat Ulang Tahun, Piyya Sayang!</h1>
+    <p class="message">
+      Semoga hari ini menjadi awal dari tahun yang penuh kebahagiaan, keberkahan, dan cinta yang tak terbatas. <br><br>
+      Panjang umur, Piyya, diberikan kesehatan yang melimpah, hati yang tenang, dan semangat yang selalu menyala. <br><br>
+      Semoga Allah selalu menjaga dan melindungi Piyya di setiap perjalanan, baik yang dekat maupun jauh. Tetaplah menjadi nona manis yang penuh senyum dan cinta 💖
+    </p>
+
+    <p class="love-text">Klik love sebanyak yang kamu mau 😍</p>
+    <button id="loveBtn">❤️</button>
+    <p class="counter">Jumlah klik: <span id="counter">0</span></p>
+
+    <div class="form-section hidden" id="formSection">
+      <h2>🎁 Wishlist Ulang Tahun</h2>
+      <textarea id="wishlist" placeholder="Tulis harapan atau hadiah impianmu di sini..."></textarea>
+      <button id="sendBtn">Kirim via WhatsApp 💌</button>
     </div>
-    <canvas id="confetti"></canvas>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
