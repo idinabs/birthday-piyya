@@ -26,7 +26,7 @@ loveBtn.addEventListener('click', () => {
 
 sendBtn.addEventListener('click', () => {
   const message = encodeURIComponent(
-    `Hai! Ini wishlist ulang tahunku:\n\n${wishlist.value}\n\nLove dari Piyya 💖`
+    `Diketik yahh mau kado apa hehe:\n\n${wishlist.value}\n\n`
   );
   const waUrl = `https://wa.me/6288215354870?text=${message}`;
   window.open(waUrl, '_blank');
